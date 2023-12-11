@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>facebook Releases Nexus Repository</name>
-	      <url>http://3.109.153.81:9980/Tohitshaikh/repository/facebook-release/</url>
+	      <url>http://65.0.19.107:9999/Tohitshaikh/repository/facebook-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>facebook Snapshot Nexus Repository </name>
-	      <url>http://65.0.131.165:9980/Tohitshaikh/repository/facebook-snapshot/</url>
+	      <url>http://65.0.19.107:9999/Tohitshaikh/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
