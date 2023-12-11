@@ -1,0 +1,28 @@
+
+//Script for pipeline project 
+node{
+
+//Adding Variable for Maven 
+def mavenHome = tool "maven3.9.2"
+
+//Pulling the Code from the Github Repository 
+stage("Source-Code-Git"){
+git credentialsId: 'edfa17d0-49e7-4150-ab7c-3cdf12247b98', url: 'https://github.com/TohitShaikh/maven-web-application.git'
+}
+
+//Build the Code 
+stage("Build-stage"){
+sh "$mavenHome/bin/mvn clean package"
+}
+
+//generating SonarQube Report
+stage("Generate Sonarqube Report"){
+sh "$mavenHome/bin/mvn sonar:sonar" 
+}
+
+//Uploading the Artifact into Artifact repositories
+stage("Uploading the Artifact into Nexus "){
+sh "$mavenHome/bin/mvn deploy"
+}
+
+}//Node Closing
