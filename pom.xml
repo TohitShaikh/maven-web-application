@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://52.221.223.229:9000/</sonar.host.url>
+		<sonar.host.url>http://52.221.215.242:9000/</sonar.host.url>
 		<sonar.login>squ_b93764a106602d99a4eb8b3b14b17cae723cdeed</sonar.login> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Demo Releases Nexus Repository</name>
-	      <url>http://13.215.252.176:8081/repository/demo-release-repository/</url>
+	      <url>http://18.141.144.112:8081/repository/demo-release-repository/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Demo Snapshot Nexus Repository </name>
-	      <url>http://13.215.252.176:8081/repository/demo-snapshot-reposotory/</url>
+	      <url>http://18.141.144.112:8081/repository/demo-snapshot-reposotory//</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
