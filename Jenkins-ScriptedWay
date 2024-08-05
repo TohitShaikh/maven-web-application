@@ -3,7 +3,7 @@
 node{
 
 //Adding Variable for Maven 
-def mavenHome = tool "maven3.9.2"
+def mavenHome = tool "maven"
 echo "The Node name is: ${env.NODE_NAME} "
 echo "The Job name is: ${env.JOB_NAME} "
 echo " The Build number is: ${env.BUILD_NUMBER} "
